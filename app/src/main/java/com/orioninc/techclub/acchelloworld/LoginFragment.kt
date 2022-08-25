@@ -26,6 +26,14 @@ class LoginFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
+    private var userRepository: UserRepository? =null
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        userRepository = UserRepository(requireContext())
+    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -51,20 +59,11 @@ class LoginFragment : Fragment() {
     }
 
     private fun login(username: String, password: String) {
-        GlobalScope.launch {
-            launch(Dispatchers.IO) {
-                val body = LoginBody(username, password)
-
-                val response = RetrofitClient.userService.login(body)
-
-                withContext(Dispatchers.Main) {
-                    if (response.isSuccessful) {
-                        findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
-                    } else {
-                        Toast.makeText(context, "Login is failed!", Toast.LENGTH_LONG).show()
-                    }
-                }
-            }
+        userRepository?.login(username, password) { isSuccess ->
+            if (isSuccess)
+                findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
+            else
+                Toast.makeText(context, "Login is failed!", Toast.LENGTH_LONG).show()
         }
     }
 }

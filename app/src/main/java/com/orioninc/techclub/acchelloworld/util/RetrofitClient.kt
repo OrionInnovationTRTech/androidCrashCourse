@@ -1,5 +1,6 @@
-package com.orioninc.techclub.acchelloworld
+package com.orioninc.techclub.acchelloworld.util
 
+import com.orioninc.techclub.acchelloworld.data.api.UserService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

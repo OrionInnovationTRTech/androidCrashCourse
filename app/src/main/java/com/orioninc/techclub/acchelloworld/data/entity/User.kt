@@ -1,4 +1,4 @@
-package com.orioninc.techclub.acchelloworld
+package com.orioninc.techclub.acchelloworld.data.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

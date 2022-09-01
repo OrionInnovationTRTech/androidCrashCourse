@@ -1,4 +1,4 @@
-package com.orioninc.techclub.acchelloworld
+package com.orioninc.techclub.acchelloworld.data.entity
 
 data class LoginBody(
     val email: String,

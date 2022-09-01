@@ -1,4 +1,4 @@
-package com.orioninc.techclub.acchelloworld
+package com.orioninc.techclub.acchelloworld.ui.main
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -8,6 +8,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.orioninc.techclub.acchelloworld.DEFAULT_WELCOME_MESSAGE_VISIBILITY
+import com.orioninc.techclub.acchelloworld.KEY_WELCOME_MESSAGE_VISIBILITY
+import com.orioninc.techclub.acchelloworld.R
+import com.orioninc.techclub.acchelloworld.SHARED_PREFERENCES_NAME
+import com.orioninc.techclub.acchelloworld.data.repository.UserRepository
 import com.orioninc.techclub.acchelloworld.databinding.FragmentMainBinding
 
 

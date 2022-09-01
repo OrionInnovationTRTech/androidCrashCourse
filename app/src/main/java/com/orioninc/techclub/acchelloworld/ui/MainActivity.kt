@@ -1,8 +1,9 @@
-package com.orioninc.techclub.acchelloworld
+package com.orioninc.techclub.acchelloworld.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.orioninc.techclub.acchelloworld.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,6 +1,7 @@
-package com.orioninc.techclub.acchelloworld
+package com.orioninc.techclub.acchelloworld.data.dao
 
 import androidx.room.*
+import com.orioninc.techclub.acchelloworld.data.entity.User
 
 @Dao
 interface UserDao {

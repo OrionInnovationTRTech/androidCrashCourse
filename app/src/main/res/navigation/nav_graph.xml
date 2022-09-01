@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.orioninc.techclub.acchelloworld.SplashFragment"
+        android:name="com.orioninc.techclub.acchelloworld.ui.splash.SplashFragment"
         android:label="Splash"
         tools:layout="@layout/fragment_splash">
         <action
@@ -24,7 +24,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.orioninc.techclub.acchelloworld.LoginFragment"
+        android:name="com.orioninc.techclub.acchelloworld.ui.login.LoginFragment"
         android:label="Login"
         tools:layout="@layout/fragment_login">
 
@@ -38,7 +38,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.orioninc.techclub.acchelloworld.MainFragment"
+        android:name="com.orioninc.techclub.acchelloworld.ui.main.MainFragment"
         android:label="Main"
         tools:layout="@layout/fragment_main">
         <action
